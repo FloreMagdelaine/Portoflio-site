@@ -1,0 +1,56 @@
+.slogan {
+  position : absolute;
+  z-index: 4;
+  margin-left: 20%;
+  margin-top: 20%;
+  animation-duration: 2s;
+  animation-name: glissement;
+}
+  
+  @keyframes glissement {
+  from {
+    margin-top: 0%;
+  }
+  
+  to {
+    margin-top: 20%;
+  }
+}
+
+.imgprincipale {
+  animation-duration: 2s;
+  animation-name: opacity;
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0%;
+  }
+  
+  to {
+    opacity: 100%;
+  }
+}
+
+.dessins {
+  animation-duration: 2s;
+  animation-name: glissement_dessins;
+}
+
+@keyframes glissement_dessins {
+from {
+  grid-gap: 100vh;
+  opacity: 0%;
+}
+
+to {
+  grid-gap: 30px;
+  opacity: 100%;
+}
+}
+
+.popover__container:hover .popover__content {
+  animation-duration: 0.5s;
+  animation-name: opacity;
+}
+
